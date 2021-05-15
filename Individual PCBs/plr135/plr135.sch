@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+LIBS:plr135-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PLR135-T10:PLR135-T10 U1
+U 1 1 5FA025FE
+P 4700 2850
+F 0 "U1" V 4722 2420 50  0000 R CNN
+F 1 "PLR135-T10" V 4631 2420 50  0000 R CNN
+F 2 "INA1650IPWR:PLR135-T10_PLT133-T10W" H 4700 2850 50  0001 L BNN
+F 3 "" H 4700 2850 50  0001 C CNN
+	1    4700 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FA02CDD
+P 4850 3500
+F 0 "C1" V 4621 3500 50  0000 C CNN
+F 1 "0.1uF" V 4712 3500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4850 3500 50  0001 C CNN
+F 3 "~" H 4850 3500 50  0001 C CNN
+	1    4850 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3250 4700 3500
+Wire Wire Line
+	4750 3500 4700 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	4700 3500 4700 3750
+Wire Wire Line
+	5000 3250 5000 3500
+Wire Wire Line
+	4950 3500 5000 3500
+Connection ~ 5000 3500
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5FA03C0A
+P 4700 4000
+F 0 "L1" V 4654 4078 50  0000 L CNN
+F 1 "47uH" V 4745 4078 50  0000 L CNN
+F 2 "INA1650IPWR:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" H 4700 4000 50  0001 C CNN
+F 3 "~" H 4700 4000 50  0001 C CNN
+	1    4700 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3500 5000 4250
+Wire Wire Line
+	4400 3250 4400 4250
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5FA05040
+P 4700 4250
+F 0 "#PWR0101" H 4700 4100 50  0001 C CNN
+F 1 "+3.3V" H 4715 4423 50  0000 C CNN
+F 2 "" H 4700 4250 50  0001 C CNN
+F 3 "" H 4700 4250 50  0001 C CNN
+	1    4700 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FA06058
+P 5000 4250
+F 0 "#PWR0102" H 5000 4000 50  0001 C CNN
+F 1 "GND" H 5005 4077 50  0000 C CNN
+F 2 "" H 5000 4250 50  0001 C CNN
+F 3 "" H 5000 4250 50  0001 C CNN
+	1    5000 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 4250 3    50   Input ~ 0
+data
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5FA0728B
+P 5450 3750
+F 0 "J1" H 5558 4031 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5558 3940 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5450 3750 50  0001 C CNN
+F 3 "~" H 5450 3750 50  0001 C CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FA07B22
+P 5650 3750
+F 0 "#PWR0103" H 5650 3500 50  0001 C CNN
+F 1 "GND" V 5655 3622 50  0000 R CNN
+F 2 "" H 5650 3750 50  0001 C CNN
+F 3 "" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5FA0837E
+P 5650 3650
+F 0 "#PWR0104" H 5650 3500 50  0001 C CNN
+F 1 "+3.3V" V 5665 3778 50  0000 L CNN
+F 2 "" H 5650 3650 50  0001 C CNN
+F 3 "" H 5650 3650 50  0001 C CNN
+	1    5650 3650
+	0    1    1    0   
+$EndComp
+Text GLabel 5650 3850 2    50   Input ~ 0
+data
+$EndSCHEMATC

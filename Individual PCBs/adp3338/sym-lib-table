@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ADP3338AKCZ-3.3)(type Legacy)(uri "C:/Users/My Desktop/Desktop/filte/adp3338/adp3338-cache.lib")(options "")(descr ""))
+  (lib (name adp3338-rescue)(type Legacy)(uri ${KIPRJMOD}/adp3338-rescue.lib)(options "")(descr ""))
+)
